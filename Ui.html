@@ -1,0 +1,119 @@
+<html>
+
+<style>
+button { 
+		background-color: #4CAF50; 
+		color: white; 
+		padding: 14px 20px; 
+	
+		border: none; 
+		cursor: pointer; 
+		width: 100%; 
+	} 
+  #div1 {
+  font-size:48px;
+}
+
+
+
+
+.myButton {
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body bgcolor="gray">
+
+<div id="div1" class="fa"></div>
+
+<script>
+function chargebattery() {
+  var a;
+  a = document.getElementById("div1");
+  a.innerHTML = "&#xf244;";
+  setTimeout(function () {
+      a.innerHTML = "&#xf243;";
+    }, 1000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf242;";
+    }, 2000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf241;";
+    }, 3000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf240;";
+    }, 4000);
+}
+chargebattery();
+setInterval(chargebattery, 5000);
+</script>
+
+
+<video controls width="720"; style="margin-left: 50%">
+  <source src="https://www.youtube.com › watch" type="video/mp4">
+  <source src="https://www.youtube.com › watch" type="video/webm">
+<div style="border: 1px solid black ; padding: 8px ;">
+Sorry, your browser does not support the &lt;video&gt; tag used in this demo.
+</div>
+</video>
+
+
+<table>
+<tr>
+
+<td></td>
+<td>
+<div style="padding: 8px ;">
+<button type="button" style="font-size:24px"> <i class="fa fa-toggle-up" style="font-size:48px;color:red"></i></button>
+</div>
+</tr>
+<tr>
+<td>
+<div style="padding: 8px ;"> 
+<button type="button" style="font-size:24px"> <i class="fa fa-toggle-left" style="font-size:48px;color:red"></i></button></div>
+</td>
+<td></td>
+<td>
+<div style="padding: 8px ;">
+<button type="button" style="font-size:24px"><i class="fa fa-caret-square-o-right" style="font-size:48px;color:red"></i></i></button>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<div style="padding: 8px ;">
+<button type="button" style="font-size:24px"><i class="fa fa-caret-square-o-down" style="font-size:48px;color:red"></i></button>
+</td>
+</tr>
+</div>
+<div style="margin-right:20%; float:right; margin-top:5%">
+<button type="button" class="myButton" style="width:140px"><a href="#" style="text-decoration:none">PIR</a></button></div>
+<button type="button" class="myButton" style="width:140px; margin-right:6%; float:right; margin-top:5%"><a href="#" style="text-decoration:none">HUMIDITY</a></button>
+<button type="button" class="myButton" style="width:140px; margin-right:6%; float:right; margin-top:5%"><a href="#" style="text-decoration:none ">HEAT</a></button>
+<button type="button" class="myButton" style="width:140px; margin-right:6%; float:right; margin-top:5%"><a href="#" style="text-decoration:none ">GAS</a></button>
+</div>
+
+</body>
+</html>
